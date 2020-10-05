@@ -1,0 +1,383 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  background-color: white;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* --------------------- RUBRIKER & TEXT --------------------- */
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* --------------------- HEADER --------------------- */
+
+header {
+  grid-area: header;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header.scroll {
+  background-color: rgba(255, 255, 255, 1.0);
+  transition: all 0.8s ease;
+}
+
+header.scroll nav a {
+  color: black;
+}
+
+header.scroll div {
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+  }  
+
+.hamburger-menu {
+  color: white;
+}
+
+/* --------------------- MAIN --------------------- */
+
+.mainIndex {
+  grid-area: main;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "gokart gokart gokart"
+    "indoors outdoors info"
+    "videos videos videos";
+    /* "sponsors sponsors sponsors"; */
+  background-color: white;
+  margin-top: -0.5rem;
+}
+
+.mainBooking {
+  grid-area: main;
+  background-color: white;
+  margin-top: -0.5rem;
+}
+
+/*---------------------------------- GOKART (BAKGRUNDSBILD) ---------------------------------- */
+
+.gokartMain {
+  grid-area: gokart;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(/images/index_background.jpg);
+  background-size: cover;
+  height: 60rem;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.gokartBooking {
+  grid-area: gokart;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(/images/index_background.jpg);
+  background-size: cover;
+  height: 70rem;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gokartText {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem;
+  margin-top: 20rem;
+  z-index: 1;
+  animation-name: fade-in;
+  animation-duration: 4s;
+  
+}
+
+/*---------------------------------- VIDEO ---------------------------------- */
+
+.videos {
+  grid-area: videos;
+  display: flex;
+  padding: 0 1rem 1rem 1rem;
+  gap: 1rem;
+}
+
+.indoorVideoContainer,
+.outdoorVideoContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 28.125%; /* 2x 16:9 aspect ratio */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+
+How this works: The container element is given a zero height and a percentage bottom padding. 
+The percentage bottom padding is a percentage of the container width, so that gives it a fixed aspect ratio. 
+But in order to get the iframe to show up inside the zero-height container, 
+you need to make the container relative and the iframe absolute, positioned inside the div.
+
+*/
+
+/*---------------------------------- BUTTON ---------------------------------- */
+
+.indexButton, .bookingButton {
+  background-color: #fbd90e;
+  border: none;
+  border-radius: 20rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/*
+.indexButton:hover {
+  background-color: white;
+  cursor: pointer;
+}
+*/
+
+.indexButton:hover, .bookingButton:hover {
+  background-color: white;
+  border: solid black 0.1rem;
+  cursor: pointer;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*---------------------------------- INDOORS / OUTDOORS / INFO ---------------------------------- */
+
+.indoors {
+  grid-area: indoors;
+  
+  position: relative;
+  
+}
+
+.indoors img,
+.outdoors img,
+.info img {
+  height: auto;
+  width: 100%;
+}
+
+.outdoors {
+  grid-area: outdoors;
+  
+  position: relative;
+  
+}
+
+.info {
+  grid-area: info;
+  position: relative;
+  
+}
+
+.indoors h3,
+.outdoors h3,
+.info h3 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+/*---------------------------------- SPONSORS ---------------------------------- */
+
+/*
+.sponsors {
+  grid-area: sponsors;
+  background-color: white;
+  padding: 2rem;
+}
+
+.sponsors img {
+  height: auto;
+  max-width: 100%;
+}
+
+.sponsors ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.sponsors li {
+  list-style-type: none;
+  margin: 1rem;
+}
+*/
+
+/* --------------- FORMULÄR ---------------- */
+
+form {
+  margin-top: 10rem;
+  color: black;
+  width: 40rem;
+  background-color: white;
+  padding: 2rem;
+  animation-name: fade-in;
+  animation-duration: 4s;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 1.5rem;
+}
+
+label {
+  padding: .5rem;
+}
+
+textarea {
+  height: 5rem;
+  
+}
+
+.flex {
+  display: flex;  
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+#type {
+  padding: 0.5rem;
+}
+
+.trackSelection {
+  display: flex;
+}
+
+.big {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
+/* --------------------- FOOTER --------------------- */
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.contact > * {
+  margin: 0.5rem;
+}
+
+.socmedia {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 3rem;
+}

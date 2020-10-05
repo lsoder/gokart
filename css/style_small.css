@@ -1,0 +1,64 @@
+@media (max-width: 400px) {
+
+
+  .mainIndex {
+    grid-area: main;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "gokart"
+      "indoors"
+      "outdoors"
+      "info"
+      "videos";
+      /* "sponsors sponsors sponsors"; */
+    background-color: white;
+    margin-top: -0.5rem;
+  }
+
+    .gokartMain {
+        height: 45rem;
+      }
+
+    .gokartText {
+        font-size: 2.5rem;
+        color: white;
+        padding: 1rem;
+        margin-top: 10rem;
+        z-index: 1;
+        animation-name: fade-in;
+        animation-duration: 4s;
+      }
+
+     
+
+    h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+      
+      h3 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+          display: none;
+      }
+
+      button {
+          width: 10rem;
+      }
+
+      form {
+        width: 15rem;
+      }
+
+      .big {
+        font-size: 1.5rem;
+      }
+
+}

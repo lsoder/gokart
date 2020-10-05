@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boka Gokart</title>
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style_large.css" />
+    <link rel="stylesheet" href="/css/style_medium.css" />
+    <link rel="stylesheet" href="/css/style_small.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scroll.js"></script>
+
+  </head>
+  <body>
+    <!--------------------------------------------- HEADER  --------------------------------------------->
+
+    <header>
+      <div class="menu">
+        <a href="/index.html"><img src="/images/logo.png" /></a>
+        <nav>
+          <ul>
+            <li><a href="/gokart.html">Gokart</a></li>
+            <li><a href="#">Konferens</a></li>
+            <li><a href="#">Restaurang</a></li>
+            <li><a href="#">SV/EN</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!--------------------------------------------- MAIN  --------------------------------------------->
+
+    <main class="mainBooking">
+      <div class="gokartBooking">
+        <div class="layer">
+          <div class="booking">
+            <!---------- FORM  ---------->
+
+            <form class="flex vertical" action="/" method="POST">
+              <h2 class="big">Boka Gokart</h2>
+
+              <div class="trackSelection">
+              
+              <input type="radio" name="track" id="indoors" value="indoors" required>
+              <label for="indoors">Inomhus</label>
+              
+              <input type="radio" name="track" id="outdoors" value="outdoors">
+              <label for="outdoors">Utomhus</label>
+            </div>
+
+              <label for="type">Välj upplägg</label>
+                <select id="type" name="type" required>
+                  <option value="min">Minirace</option>
+                  <option value="max">Maxirace</option>
+                  <option value="mag">Magnumrace</option>
+                  <option value="lam">La Mance</option>
+                </select>
+
+              <label for="date">Datum</label>
+                <input type="date" name="date" id="date" required>
+
+              <label for="quantity">Antal (minst 8)</label>
+                <input type="number" name="quantity" id="quantity" min="8" required>
+
+              <label for="age">Ålder på deltagarna</label>
+                <input type="text" name="age" id="age" required>
+
+              <label for="company">Företag</label>
+                <input type="text" name="company" id="company">
+
+              <label for="name">Namn</label>
+                <input type="text" name="name" id="name" required>
+                
+              <label for="surname">Efternamn</label>
+                <input type="text" name="surname" id="surname" required>
+
+              <label for="email">E-mailadress</label>
+                <input type="email" name="email" id="email" required />
+              
+              <label for="phone">Telefonnummer</label>
+                <input type="tel" name="phone" id="phone" required />
+
+              <label for="other">Övrig info</label>
+                <textarea></textarea>
+
+              <button class="bookingButton" type="submit">Boka</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--------------------------------------------- FOOTER  --------------------------------------------->
+
+    <footer>
+      <div class="contact">
+        <span>
+          Bulyckevägen 20 418 78 Göteborg | 031-56 29 60 | info@gokart.se
+        </span>
+      </div>
+
+      <div class="socmedia">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-stopwatch-20"></i>
+      </div>
+    </footer>
+  </body>
+</html>
