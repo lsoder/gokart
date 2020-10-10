@@ -1,5 +1,12 @@
-@media (max-width: 400px) {
+/*
 
+Ändrat storleken på text och knappar och placerat allt innehåll i en kolumn
+
+*/
+
+
+@media (max-width: 400px) {
+  /* ----- Index -----*/
 
   .mainIndex {
     grid-area: main;
@@ -11,54 +18,68 @@
       "indoors"
       "outdoors"
       "info"
-      "videos";
-      /* "sponsors sponsors sponsors"; */
+      "videos"
+      "sponsorsTeam13";
     background-color: white;
     margin-top: -0.5rem;
   }
 
-    .gokartMain {
-        height: 45rem;
-      }
+  .gokartMain {
+    height: 45rem;
+  }
 
-    .gokartText {
-        font-size: 2.5rem;
-        color: white;
-        padding: 1rem;
-        margin-top: 10rem;
-        z-index: 1;
-        animation-name: fade-in;
-        animation-duration: 4s;
-      }
+  .gokartText {
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem;
+    margin-top: 10rem;
+    z-index: 1;
+    animation-name: fade-in;
+    animation-duration: 4s;
+  }
 
-     
+  /* ----- Rubriker och text -----*/
 
-    h1 {
-        font-size: 2rem;
-      }
+  h1 {
+    font-size: 2rem;
+  }
 
-      h2 {
-        font-size: 1rem;
-      }
-      
-      h3 {
-        font-size: 2rem;
-      }
+  h2 {
+    font-size: 1rem;
+  }
 
-      nav ul {
-          display: none;
-      }
+  h3 {
+    font-size: 2rem;
+  }
 
-      button {
-          width: 10rem;
-      }
+  /* ----- Header -----*/
 
-      form {
-        width: 15rem;
-      }
+  nav ul {
+    display: none;
+  }
 
-      .big {
-        font-size: 1.5rem;
-      }
+  /* ----- Knapp -----*/
+
+  .bookingButton {
+    width: 10rem;
+  }
+
+  /* ----- Formulär -----*/
+
+  form {
+    width: 15rem;
+  }
+
+  .big {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 
 }

@@ -39,7 +39,7 @@
         </nav>
       </div>
 
-      <div class="hamburger-menu">
+      <div class="hamburgerMenu">
         <i class="fas fa-bars"></i>
       </div>
     </header>
@@ -53,7 +53,12 @@
             <!---------- FORM  ---------->
 
             <form class="flex vertical" action="/" method="POST">
-              <h2 class="big">Boka Gokart</h2>
+              
+              <div class="formContainer">
+                <h2 class="big">Boka Gokart</h2>
+                <a href="#"><h3 class="info">Klicka här för att se bokningsbara upplägg</h3></a>
+                
+              </div>
 
               <div class="trackSelection">
               
@@ -84,11 +89,11 @@
               <label for="company">Företag</label>
                 <input type="text" name="company" id="company">
 
-              <label for="name">Namn</label>
-                <input type="text" name="name" id="name" required>
+              <label for="firstName">Förnamn</label>
+                <input type="text" name="firstName" id="firstName" required>
                 
-              <label for="surname">Efternamn</label>
-                <input type="text" name="surname" id="surname" required>
+              <label for="surName">Efternamn</label>
+                <input type="text" name="surName" id="surName" required>
 
               <label for="email">E-mailadress</label>
                 <input type="email" name="email" id="email" required />
@@ -104,6 +109,21 @@
           </div>
         </div>
       </div>
+
+      <!---------- SPONSORS  ---------->
+
+      <div class="sponsorsTeam13">
+        <ul>
+          <li><img src="/images/aspen.jpg" /></li>
+          <li><img src="/images/mekonomen.jpg" /></li>
+          <li><img src="/images/vasaboden.png" /></li>
+          <li><img src="/images/svetsmaskinservice.png" /></li>
+        </ul>
+
+        <img src="/images/team13.jpg">
+
+      </div>
+
     </main>
 
     <!--------------------------------------------- FOOTER  --------------------------------------------->
@@ -111,7 +131,7 @@
     <footer>
       <div class="contact">
         <span>
-          Bulyckevägen 20 418 78 Göteborg | 031-56 29 60 | info@gokart.se
+          Bulyckevägen 20 418 78 Göteborg | 031-56 29 60 | <a href="mailto:info@gokart.se">info@gokart.se</a>
         </span>
       </div>
 

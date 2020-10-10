@@ -1,81 +1,82 @@
+/*
+
+Ändrat storleken på text och knappar, lagt in alla menyval i en hamburger-meny och placerat youtubeklippen i en kolumn istället för två 
+
+*/
+
 @media (max-width: 767px) {
+  body {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
 
-    body {
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
+  /* ----- Index -----*/
 
-    main {
-        grid-area: main;
-        display: grid;
-        grid-template-areas: 
-        "gokart"
-        "indoors"
-        "outdoors"
-        "info"
-        "videos"
-        "sponsors";
-    }
+  .gokartText {
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem;
+    margin-top: 15rem;
+    z-index: 1;
+    animation-name: fade-in;
+    animation-duration: 4s;
+  }
 
-    .gokartText {
-      font-size: 2.5rem;
-      color: white;
-      padding: 1rem;
-      margin-top: 15rem;
-      z-index: 1;
-      animation-name: fade-in;
-      animation-duration: 4s;
-    }
+  .videos {
+    grid-area: videos;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+    gap: 1rem;
+  }
 
-    .videos {
-      grid-area: videos;
-      display: flex;
-      flex-direction: column;
-      padding: 0 1rem 1rem 1rem;
-      gap: 1rem;
-    }
-    
-    .indoorVideoContainer,
-    .outdoorVideoContainer {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%; /* 1x 16:9 aspect ratio */
-    }
-    
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+  .videoContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 1x 16:9 aspect ratio */
+  }
 
-    h1 {
-        font-size: 2.5rem;
-        line-height: 3rem;
-      }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-      h2 {
-        font-size: 1.5rem;
-      }
-      
-      h3 {
-        font-size: 1rem;
-      }
+  /* ----- Rubriker -----*/
 
-      nav ul {
-          display: none;
-      }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 
-      button {
-          width: 15rem;
-      }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-      form {
-        width: 20rem;
-      }
+  h3 {
+    font-size: 1rem;
+  }
 
+  /* ----- Header -----*/
+
+  nav ul {
+    display: none;
+  }
+
+  /* ----- Knapp -----*/
+
+  .bookingButton {
+    width: 15rem;
+  }
+
+  /* ----- Formulär -----*/
+
+  form {
+    width: 20rem;
+  }
 }
