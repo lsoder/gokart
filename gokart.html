@@ -21,7 +21,6 @@
     />
 
     <script src="scroll.js"></script>
-
   </head>
   <body>
     <!--------------------------------------------- HEADER  --------------------------------------------->
@@ -53,56 +52,81 @@
             <!---------- FORM  ---------->
 
             <form class="flex vertical" action="/" method="POST">
-              
               <div class="formContainer">
                 <h2 class="big">Boka Gokart</h2>
-                <a href="#"><h3 class="info">Klicka här för att se bokningsbara upplägg</h3></a>
-                
+                <a href="#"
+                  ><h3 class="info">
+                    Klicka här för att se bokningsbara upplägg
+                  </h3></a
+                >
               </div>
 
               <div class="trackSelection">
-              
-              <input type="radio" name="track" id="indoors" value="indoors" required>
-              <label for="indoors">Inomhus</label>
-              
-              <input type="radio" name="track" id="outdoors" value="outdoors">
-              <label for="outdoors">Utomhus</label>
-            </div>
+                <input
+                  type="radio"
+                  name="track"
+                  id="indoors"
+                  value="indoors"
+                  required
+                />
+                <label for="indoors">Inomhus</label>
+
+                <input
+                  type="radio"
+                  name="track"
+                  id="outdoors"
+                  value="outdoors"
+                />
+                <label for="outdoors">Utomhus</label>
+              </div>
 
               <label for="type">Välj upplägg</label>
-                <select id="type" name="type" required>
-                  <option value="min">Minirace</option>
-                  <option value="max">Maxirace</option>
-                  <option value="mag">Magnumrace</option>
-                  <option value="lam">La Mance</option>
-                </select>
+              <select id="type" name="type" required>
+                <option value="min">Minirace</option>
+                <option value="max">Maxirace</option>
+                <option value="mag">Magnumrace</option>
+                <option value="lam">La Mance</option>
+              </select>
 
               <label for="date">Datum</label>
-                <input type="date" name="date" id="date" required>
+              <input type="date" name="date" id="date" required />
 
               <label for="quantity">Antal (minst 8)</label>
-                <input type="number" name="quantity" id="quantity" min="8" required>
+              <input
+                type="number"
+                name="quantity"
+                id="quantity"
+                min="8"
+                required
+              />
 
               <label for="age">Ålder på deltagarna</label>
-                <input type="text" name="age" id="age" required>
+              <input type="text" name="age" id="age" required />
+
+              <!--
 
               <label for="company">Företag</label>
-                <input type="text" name="company" id="company">
+              <input type="text" name="company" id="company">
 
               <label for="firstName">Förnamn</label>
-                <input type="text" name="firstName" id="firstName" required>
+              <input type="text" name="firstName" id="firstName" required>
                 
               <label for="surName">Efternamn</label>
-                <input type="text" name="surName" id="surName" required>
+              <input type="text" name="surName" id="surName" required>
+
+                -->
+
+              <label for="name">Efternamn</label>
+              <input type="text" name="name" id="name" required />
 
               <label for="email">E-mailadress</label>
-                <input type="email" name="email" id="email" required />
-              
+              <input type="email" name="email" id="email" required />
+
               <label for="phone">Telefonnummer</label>
-                <input type="tel" name="phone" id="phone" required />
+              <input type="tel" name="phone" id="phone" required />
 
               <label for="other">Övrig info</label>
-                <textarea></textarea>
+              <textarea></textarea>
 
               <button class="bookingButton" type="submit">Boka</button>
             </form>
@@ -120,10 +144,8 @@
           <li><img src="/images/svetsmaskinservice.png" /></li>
         </ul>
 
-        <img src="/images/team13.jpg">
-
+        <img src="/images/team13.jpg" />
       </div>
-
     </main>
 
     <!--------------------------------------------- FOOTER  --------------------------------------------->
@@ -131,7 +153,8 @@
     <footer>
       <div class="contact">
         <span>
-          Bulyckevägen 20 418 78 Göteborg | 031-56 29 60 | <a href="mailto:info@gokart.se">info@gokart.se</a>
+          Bulyckevägen 20 418 78 Göteborg | 031-56 29 60 |
+          <a href="mailto:info@gokart.se">info@gokart.se</a>
         </span>
       </div>
 
