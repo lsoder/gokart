@@ -60,7 +60,7 @@
 
   /* ----- Knapp -----*/
 
-  .bookingButton {
+  .bookingButton, .indexButton {
     width: 10rem;
   }
 
