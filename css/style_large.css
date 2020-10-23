@@ -60,11 +60,19 @@ header.scroll .hamburgerMenu {
   color: black;
 }
 
+/*
 .menu {
   display: flex;
   justify-content: space-between;
   flex: 1;
   align-items: center;
+}
+*/
+
+/* Lagt till nav */
+nav {
+  float: right;
+  display: flex;
 }
 
 nav ul {
@@ -395,6 +403,10 @@ footer {
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+.contact span {
+  line-height: 1.2rem;
 }
 
 .socmedia {
