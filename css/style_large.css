@@ -125,7 +125,7 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../images/index_background.jpg);
   background-size: cover;
-  height: 60rem;
+  height: 70rem;
   padding: 1rem;
   position: relative;
   display: flex;
@@ -137,7 +137,7 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../images/index_background.jpg);
   background-size: cover;
-  height: 75rem;
+  height: 70rem;
   padding: 1rem;
   position: relative;
   display: flex;
