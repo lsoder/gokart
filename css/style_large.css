@@ -60,16 +60,6 @@ header.scroll .hamburgerMenu {
   color: black;
 }
 
-/*
-.menu {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-  align-items: center;
-}
-*/
-
-/* Lagt till nav */
 nav {
   float: right;
   display: flex;
@@ -147,7 +137,7 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../images/index_background.jpg);
   background-size: cover;
-  height: 60rem;
+  height: 75rem;
   padding: 1rem;
   position: relative;
   display: flex;
