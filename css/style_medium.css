@@ -76,7 +76,7 @@
 
   /* ----- Formulär -----*/
 
-  form {
+  .bookingForm {
     width: 20rem;
   }
 }

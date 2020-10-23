@@ -293,7 +293,7 @@ you need to make the container relative and the iframe absolute, positioned insi
   grid-area: gokartBooking;
 }
 
-form {
+.bookingForm {
   margin-top: 10rem;
   color: black;
   width: 40rem;
