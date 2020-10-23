@@ -125,7 +125,7 @@ nav a:hover {
 .gokartMain {
   grid-area: gokart;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(/images/index_background.jpg);
+  background-image: url(images/index_background.jpg);
   background-size: cover;
   height: 60rem;
   padding: 1rem;
@@ -137,7 +137,7 @@ nav a:hover {
 .gokartBooking {
   grid-area: gokart;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(/images/index_background.jpg);
+  background-image: url(images/index_background.jpg);
   background-size: cover;
   height: 60rem;
   padding: 1rem;
